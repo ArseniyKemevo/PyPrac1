@@ -5,8 +5,11 @@ from config import book_list, user_list
 def main():
     fs = FileSystem()
 
+    book_list.clear()
+    user_list.clear()
+
     book_list.extend(fs.load_books())
-    user_list.extend(fs.load_users(book_list))
+    user_list.extend(fs.load_users()) 
 
     menu()
 
