@@ -14,9 +14,8 @@ def menu():
     elif choise == 2:
         user_menu(menu)
     elif choise == 3:
-        fs.save_books()
-        fs.save_users()
-        print("Данные сохранены. Программа завершена.")
+        fs.save_data()
+        print("Данные успешно сохранены. Программа завершена.")
         sys.exit()
     else:
         print("Ошибка! Неверный ввод.")

@@ -8,8 +8,9 @@ def main():
     book_list.clear()
     user_list.clear()
 
-    book_list.extend(fs.load_books())
-    user_list.extend(fs.load_users()) 
+    loaded_books, loaded_users = fs.load_data()
+    book_list.extend(loaded_books)
+    user_list.extend(loaded_users)
 
     menu()
 
